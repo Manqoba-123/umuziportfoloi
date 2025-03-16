@@ -33,9 +33,10 @@ nav, .nav-links {
 }
 
 nav {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 23vh;
+    padding: 0 20px;
 }
 
 .nav-links {
@@ -139,4 +140,120 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin:  0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_pic-container {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 200;
+}
+
+.section_text_p1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: beige;
+}
+
+.section_text_p2 {
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.type {
+    font-size: 1.75rem;
+    text-align: center;
+    color: grey;
+}
+
+#socials-contanier {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICON */
+
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-color-1 {
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 200;
+    background: none;
+    color: azure;
+    border-style: solid;
+    border-color: #7E193B;
+}
+
+.btn-color-2 {
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 200;
+    background: #7E193B;
+    color: azure;
+}
+
+.btn-color-1:hover {
+    background: #7E193B;
+}
+
+.btn-color-2:hover {
+    background: #bb456c;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
 }
