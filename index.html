@@ -1,79 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <nav id="desktop-nav">
-      <div class="logo">
-        <img src="./Assests/Logo2 transparent.png" alt="logo" />
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="logo">
+            <img src="./Assests/Logo2 transparent.png" alt="logo" />
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">
-        <img src="./Assests/Logo2 transparent.png" alt="logo" />
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">
+            <img src="./Assests/Logo2 transparent.png" alt="logo" />
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-      </div>
     </nav>
     <section id="hero">
-      <div class="section_pic-container">
-        <img src="./Assests/ProfilePicture.png" alt="my ProfilePicture" />
-      </div>
-      <div class="section_text">
-        <p class="section_text_p1">Hello, my name is</p>
-        <h1 class="title">Manqoba Mlangeni</h1>
-        <h1 class="type">Web Developer</h1>
-        <p class="section_text_p2">
-          I'm a software engeneer student who focuses on full stack web
-          development, and also into mathematics to keep on advancing with
-          problem solving. currently I'm doing a learnership at BBD as Umuzi
-          recruit.
-        </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./Assests/UpdatedCvmanqobaMlangeni.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Me
-          </button>
+        <div class="section_pic-container">
+            <img src="./Assests/ProfilePicture.png" alt="my ProfilePicture" />
         </div>
-        <div id="socials-contanier">
-          <img src="./Assests/GithubLogo.png" alt="My github logo" class="icon"
-          onclick="window.open('https://github.com/Manqoba-123')" />
-          <img src="./Assests/HackerrankLogo.png" alt="My Linkedin logo" class="icon"
-          onclick="window.open('https://www.hackerrank.com/profile/manqoba_mlangeni')" />
-          <img src="./Assests/XLogo.png" alt="My X logo" class="icon"
-          onclick="window.open('https://x.com/Manqoba59850820')" >
+        <div class="section_text">
+            <p class="section_text_p1">Hello, my name is</p>
+            <h1 class="title">Manqoba Mlangeni</h1>
+            <h1 class="type">Web Developer</h1>
+            <p class="section_text_p2">
+                I'm a software engeneer student who focuses on full stack web
+                development, and also into mathematics to keep on advancing with
+                problem solving. currently I'm doing a learnership at BBD as Umuzi
+                recruit.
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./Assests/UpdatedCvmanqobaMlangeni.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-contanier">
+                <img src="./Assests/GithubLogo.png" alt="My github logo" class="icon"
+                    onclick="window.open('https://github.com/Manqoba-123')" />
+                <img src="./Assests/HackerrankLogo.png" alt="My Linkedin logo" class="icon"
+                    onclick="window.open('https://www.hackerrank.com/profile/manqoba_mlangeni')" />
+                <img src="./Assests/XLogo.png" alt="My X logo" class="icon"
+                    onclick="window.open('https://x.com/Manqoba59850820')" />
+            </div>
         </div>
-      </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./Assests/Orange.png" alt="my photo" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Assests/tech.png" alt="education icon" class="icon" />
+                        <h3>Technology</h3>
+                        <ul id="tech-list">
+                            <li>JavaScript</li>
+                            <li>Css</li>
+                            <li>Figma</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Assests/education.png" alt="education icon" class="icon" />
+                        <h3>Education</h3>
+                        <h4>Bsc. Computer science</h4>
+                    </div>
+                </div>
+                <div class="text-contanier">
+                    <p>Greetings, My name is Manqoba and I am a very curios person.
+                        I have much interest in web development and I can back it to 2020
+                        when the pandemic took place and most thing moved to online.
+                    </p>
+                    <p id="controlling-space">Taking it to present I am currently with BBD learnership under Umuzi
+                        doing web development. The main purpose to follow this stream is to be part of the architecture
+                        who builds transformative solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
