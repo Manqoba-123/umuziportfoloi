@@ -194,7 +194,7 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     color: aliceblue;
 }
@@ -313,4 +313,44 @@ section {
 
 #controlling-space {
     margin-top: 1rem;
+}
+
+/* Experience */
+
+#experience {
+    position: relative;
+    margin-top: 10rem;
+}
+
+.experience-sub-title {
+    color: grey;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
 }
