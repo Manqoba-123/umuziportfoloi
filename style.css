@@ -283,6 +283,10 @@ section {
     display: flex;
 }
 
+#tech-list {
+    list-style: none;
+}
+
 .about-pic {
     border-radius: 2rem;
 }
@@ -326,7 +330,7 @@ section {
     color: grey;
     font-weight: 600;
     font-size: 1.75rem;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
 }
 
 .experience-details-container {
@@ -347,10 +351,76 @@ section {
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    align-items: center;
     gap: 0.5rem;
 }
 
 article .icon {
     cursor: default;
+}
+
+/* PROJECTS */
+
+#project {
+    position: relative;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: white;
+}
+
+.project-btn {
+    color: aliceblue;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #7E193B 0.1rem solid;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    height: 15vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+nav .nav-links-container{
+   justify-content: center;
 }
